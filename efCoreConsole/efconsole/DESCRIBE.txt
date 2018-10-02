@@ -1,0 +1,10 @@
+/*
+    Autor: Johnatan Lima | Exemple by .Net Core Application MVC - Plattaform EdX
+
+    This project consists of already having a defined database,
+    and from there, create the existing database model domain 
+    classes using the ORM Entity Framework Core.
+    In the Main function are examples of methods that are offered
+    by EF Core and its manipulation of database information.
+
+*/
