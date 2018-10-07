@@ -1,0 +1,12 @@
+@{
+    // Since Address isn't a string, it requires a cast.
+    var address = ViewData["Address"] as Address;
+}
+
+@ViewData["Greeting"] World!
+
+<address>
+    @address.Name<br>
+    @address.Street<br>
+    @address.City, @address.State @address.PostalCode <br>
+</address>
