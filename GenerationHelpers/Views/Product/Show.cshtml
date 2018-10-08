@@ -1,0 +1,66 @@
+@model List<GenerationHelpers.Models.Product>
+
+<html>
+<body>
+    <!-- Demo code for product collections -->
+
+    <!-- RADIOBUTTON -->
+
+    <!-- <h2>Single Select</h2>
+    
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        <table border="1">
+            <tr><th>Buy</th><th>Name</th><th>Price</th></tr>
+            @foreach (var p in Model) {
+                <tr>
+                    <td>@Html.RadioButton("selected", p.ID)</td>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                </tr>
+            }
+        </table><br />
+        <input type="submit" value="Checkout" />
+    } -->
+
+    <!-- CHECK BOX  -->
+
+    <!-- <h2>Multiple Select</h2>
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        <table border="1">
+            <tr><th>Buy</th><th>Name</th><th>Price</th></tr>
+            @foreach (var p in Model) {
+                <tr>
+                    <td>@Html.CheckBox("selected", false, new { value = p.ID })</td>
+                    <td>@p.Name</td>
+                    <td>@p.Price</td>
+                </tr>
+            }
+        </table><br />
+        <input type="submit" value="Checkout" />
+    }
+ -->
+
+    <!-- DropDownList/DropDownListFor and ListBox/ListBoxFor -->
+    <!-- <h2>Dropdown List</h2>
+    
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.DropDownList("seleted", new SelectList(Model, "ID", "Name"))
+        <input type="submit" value="Checkout" />
+    }
+
+    <hr />
+    
+    <h2>List Box</h2>
+    @{
+        var items = Model.Select(p => new SelectListItem { Value = p.ID.ToString(), Text = $"{p.Name} (${p.Price})" });
+    }
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.ListBox("seleted", items)<br />
+        <input type="submit" value="Checkout" />
+    } -->
+
+    
+
+
+</body>
+</html>

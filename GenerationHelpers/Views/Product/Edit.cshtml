@@ -1,0 +1,119 @@
+@model Product
+
+<html>
+<body>
+    <!--01) Demo code for single product object 
+        CRIANDO ACTIONS LINKS SIMPLES. USANDO AS 3 VARIAÇÕES ABAIXO. 
+    @Html.ActionLink("Link do tipo 01", "TargetAction") <br />
+    @Html.ActionLink("Outra forma de link 02", "TargetAction", new { id = Model.ID })<br />
+    @Html.ActionLink("Mais um tipo de link 03", "TargetAction", new { name = Model.Name })<br />
+    @Html.ActionLink("Hyperlink 04", "TargetAction", "TargetController", new { id = Model.ID }, new { style = "color:red" }) <br /> -->
+
+   <!--  02)
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        <input type="text" name="id" value="@Model.ID" /><br />
+        <input type="text" name="name" value="@Model.Name" /><br />
+        <input type="text" name="price" value="@Model.Price" /><br />
+        <input type="submit" value="Submit" /><br />
+    } -->
+
+        <!-- 03)
+        @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.Hidden("id", Model.ID)<br />
+        @Html.TextBox("name", Model.Name)<br />
+        @Html.TextBox("price", Model.Price)<br />
+        <input type="submit" value="Submit" /><br />
+        }
+
+        As we see, the @Html.Hidden("id", Model.ID) expression is rendered 
+        to <input id="id" name="id" type="hidden" value="901" />.
+
+        Are we done? No. Let's consider a scenario: developers change the 
+        property name from ID to ProductID. It is obvious that the value of 
+        id and name attributes won't change correspondingly (it is still "id"). 
+        When this form posts back to the target action, the model binding will 
+        fail if the parameter type is Product.
+    
+        Recommended practice: 
+        @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.HiddenFor(p => p.ID, Model.ID)<br />
+        @Html.TextBoxFor(p => p.Name, Model.Name)<br />
+        @Html.TextBoxFor(p => p.Price, Model.Price)<br />
+        <input type="submit" value="Submit" /><br />
+    } -->
+
+      <!--   04)
+        @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.TextBox("user", "Timothy")<br />
+        @Html.Password("password", "123456")<br />
+        <input type="submit" value="Login" /><br />     
+    } -->
+
+    <!-- TextArea)
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.TextArea("description", Model.Description)<br />
+        @Html.TextAreaFor(p => p.Description, Model.Description)<br />
+        <input type="submit" value="Submit" /><br />
+    } -->
+
+    <!-- Label/LabelFor -->
+
+    @using (Html.BeginForm("TargetAction", "TargetController")) {
+        @Html.HiddenFor(p => p.ID, Model.ID)<br />
+        <table>
+            <tr>
+                <td>@Html.LabelFor(p => p.Name)</td>
+                <td>@Html.TextBoxFor(p => p.Name, Model.Name)</td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(p => p.Price)</td>
+                <td>@Html.TextBoxFor(p => p.Price, Model.Price)</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" style="float:right" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    }
+
+    
+</body>
+</html>
+
+    <!-- 01) In the view, we called three different overloads of ActionLink, they are:
+
+    public static IHtmlContent ActionLink(this IHtmlHelper helper, string linkText, string actionName);
+    public static IHtmlContent ActionLink(this IHtmlHelper helper, string linkText, string actionName, object routeValues);
+    public static IHtmlContent ActionLink(this IHtmlHelper helper, string linkText,
+    string actionName, string controllerName, object routeValues, object htmlAttributes);
+    -->
+
+    <!-- BeginForm 02)
+
+    As we know, the standard way an HTML page sends data to the web server is submitting 
+    forms. The <form> tag has existed in HTML since HTML version 2.0 back in 1995. The 
+    functionality of BeginForm is to generate <form> elements.
+
+    There are more than ten overloads for BeginForm, but these three are the most popular:
+
+    public static MvcForm BeginForm(this IHtmlHelper htmlHelper);
+    public static MvcForm BeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName);
+    public static MvcForm BeginForm(this IHtmlHelper htmlHelper, string actionName, string controllerName, FormMethod method);
+     -->
+
+    <!-- 03)
+    As you may already know, the <input type="hidden"> holds an invisible name-value pair.
+    For those values we don't want users to modify but have to post back to the web server
+    , we use this HTML element. For example, the ID property of Product -->
+
+    <!-- 04) TextBox/TextBoxFor
+
+    As we saw in last example, both @Html.TextBox( "name", Model.Name) 
+    and @Html.TextBoxFor(p => p.Name, Model.Name) generate the same HTML
+    code <input id="name" name="name" type="text" value="Rocket" />.
+    
+    Password/PasswordFor
+    
+    This is similar to TextBox and TextBoxFor, but it generates <input type="password" />.
+    So the view code below: -->
