@@ -6742,7 +6742,7 @@
       ]
     },
     "Microsoft.Extensions.PlatformAbstractions/1.1.0": {
-      "sha512": "UMlN++q5qqzQ2HH+uOrKxN5fmBXMQDhrYkSaPJxhmyzfJaFPirrVr1raim/Ocq1psAZoB9+7JSAf0GDAX35wUg==",
+      "sha512": "H6ZsQzxYw/6k2DfEQRXdC+vQ6obd6Uba3uGJrnJ2vG4PRXjQZ7seB13JdCfE72abp8E6Fk3gGgDzfJiLZi5ZpQ==",
       "type": "package",
       "path": "microsoft.extensions.platformabstractions/1.1.0",
       "files": [
@@ -7711,10 +7711,11 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "m9y+SLyqYEDcc3lnqAHO2VOsdIeDuO02IuBXeo7CIDve2J3ahXQRieZt2DuoXgCnWW83PgN6+8CQsaORlwAMXw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
+        ".signature.p7s",
         "lib/net35/Remotion.Linq.XML",
         "lib/net35/Remotion.Linq.dll",
         "lib/net40/Remotion.Linq.XML",
@@ -7989,10 +7990,11 @@
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
-      "sha512": "Kw+n4CUhQ8S4YAPmpRUldO8S7c4LU7HHukJF0v5Sfggf8Ia9YVdIh0dYkMvKvS+DTX+OBORSMqPM0CGfAzFtVA==",
+      "sha512": "ndZplZhKILwXTlM3v4EYQlJqTJ4OFoOoGDIk9w1a6Qv4x1lnUyM0CPnHGBzh3jnmHpUYeVCqTDwFQ9zyHZDOGQ==",
       "type": "package",
       "path": "sqlitepclraw.bundle_green/1.1.7",
       "files": [
+        ".signature.p7s",
         "build/wp8/SQLitePCLRaw.bundle_green.targets",
         "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
         "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
@@ -8034,10 +8036,11 @@
       ]
     },
     "SQLitePCLRaw.core/1.1.7": {
-      "sha512": "u9k9ZFkyTU6CVyXWpRuuXOvKi/cy/xt1oGKVSW8aUKcTL4RdH34yFNtVykEeiR68ojIEvmoZfL51h/xx2IQk5g==",
+      "sha512": "OwSVeqJVN2M0eU7h6Xw4S8BvzNde9T1o8vP9a7OBGBC4CXBa1ePBjo7tq6gkF6yIdcDxkqLbOraHBxdLrvMq2g==",
       "type": "package",
       "path": "sqlitepclraw.core/1.1.7",
       "files": [
+        ".signature.p7s",
         "lib/MonoAndroid/SQLitePCLRaw.core.dll",
         "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
         "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
@@ -8058,10 +8061,11 @@
       ]
     },
     "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.7": {
-      "sha512": "KRqMd1qLwJ4pzPybj8q95s+wV6jby5F0O/rp0vw3wa2Z2wHxRm0VqxS2Sejlr7Ctz+LxSr8DpNg1l1u6n/PAPA==",
+      "sha512": "LWxJ0JhP6+FeiKadmlve/5zfdgACoUCqjbYGD2TDGpBUrHC0v+RdjZhXi48sTnkVW5fn+TtA37WV02LSMFJH3w==",
       "type": "package",
       "path": "sqlitepclraw.lib.e_sqlite3.linux/1.1.7",
       "files": [
+        ".signature.p7s",
         "build/net35/SQLitePCLRaw.lib.e_sqlite3.linux.targets",
         "lib/net35/_._",
         "lib/netstandard1.0/_._",
@@ -8073,10 +8077,11 @@
       ]
     },
     "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.7": {
-      "sha512": "hdZx1DKHbDi4li6abmJ+A29mxY8D6BcM0s8VMT8p4MWEyrj54CZFUm402jTV6OgZCsFGkbRFnuFdBXf4vSDO7g==",
+      "sha512": "LnEgt++nwP2KnoFYIKdAXPjS9W8ZGU1DfL/PHyAqLBQQlfG5V0H/HHiVJOh5B6XQ4Jf0AdJQphtkVG4u2V3mYQ==",
       "type": "package",
       "path": "sqlitepclraw.lib.e_sqlite3.osx/1.1.7",
       "files": [
+        ".signature.p7s",
         "build/net35/SQLitePCLRaw.lib.e_sqlite3.osx.targets",
         "lib/net35/_._",
         "lib/netstandard1.0/_._",
@@ -8087,10 +8092,11 @@
       ]
     },
     "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.7": {
-      "sha512": "roIdTH4a4iFa08HOwTWnzj2QYBIpSZRYfLSvHjtbH67I4DSWregrd4jkSnoOuwC5GHG08FNahBfEx3HAsVqW+g==",
+      "sha512": "M1WskZ/7pOTLCwdPgvrK4YGx+pJoT5cISUs8G8O68Wr+yLUBnz4BhnS+suhUiD1W/UAkFev/MnbeCiQj87VaTQ==",
       "type": "package",
       "path": "sqlitepclraw.lib.e_sqlite3.v110_xp/1.1.7",
       "files": [
+        ".signature.p7s",
         "build/net35/SQLitePCLRaw.lib.e_sqlite3.v110_xp.targets",
         "lib/net35/_._",
         "lib/netstandard1.0/_._",
@@ -8102,10 +8108,11 @@
       ]
     },
     "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.7": {
-      "sha512": "Zdug2wETm6847337EtD8MoCAtOdwM6prEXL/UsJ97Zxvoeyk/gUpdtuFNBxgJzceuty0jymjxm5yur5QajdApg==",
+      "sha512": "J81nAWSiEJK8agJR/r9uRy+0SGmsFq3GmSMu4QS0Jzr+OQDAjLVZ/qNhUF1Q15p/h/NR5/o0HyzVHPofcxEyvA==",
       "type": "package",
       "path": "sqlitepclraw.provider.e_sqlite3.netstandard11/1.1.7",
       "files": [
+        ".signature.p7s",
         "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.7.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.netstandard11.nuspec"
@@ -12702,23 +12709,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pcosta\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/UserDexter/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pcosta\\Contacts\\FilesCore\\NetCoreLabs\\Tutorial_Lab_4\\Start\\MyWebApp\\MyWebApp.csproj",
+      "projectUniqueName": "/home/UserDexter/Documentos/Workspace-GitHub/NetCoreLabs/Tutorial_Lab_4/Start/MyWebApp/MyWebApp.csproj",
       "projectName": "MyWebApp",
-      "projectPath": "c:\\Users\\pcosta\\Contacts\\FilesCore\\NetCoreLabs\\Tutorial_Lab_4\\Start\\MyWebApp\\MyWebApp.csproj",
-      "packagesPath": "C:\\Users\\pcosta\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pcosta\\Contacts\\FilesCore\\NetCoreLabs\\Tutorial_Lab_4\\Start\\MyWebApp\\obj\\",
+      "projectPath": "/home/UserDexter/Documentos/Workspace-GitHub/NetCoreLabs/Tutorial_Lab_4/Start/MyWebApp/MyWebApp.csproj",
+      "packagesPath": "/home/UserDexter/.nuget/packages/",
+      "outputPath": "/home/UserDexter/Documentos/Workspace-GitHub/NetCoreLabs/Tutorial_Lab_4/Start/MyWebApp/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pcosta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/UserDexter/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"

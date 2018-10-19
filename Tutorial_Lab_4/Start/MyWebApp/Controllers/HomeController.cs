@@ -13,6 +13,9 @@ namespace MyWebApp.Controllers {
             roles.Add(new Transformer(2, "Bumblebee", "Earth", "Yellow"));
             roles.Add(new Transformer(3, "Starscream", "Cybertron", "Red"));
             roles.Add(new Transformer(4, "Soundwave", "Cybertron", "Purple"));
+            //adicionado por mim
+            roles.Add(new Transformer(23, "Transformer Exemplo", "Pluton", "Green"));
+            
     
             return View(roles);
         }
