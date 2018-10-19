@@ -1,0 +1,9 @@
+@model MyWebApp.Models.Transformer
+
+<tr>
+    <td>@Model.ID</td>
+    <td>@Model.Name</td>
+    <td>@Model.Location.ToUpper()</td>
+
+    <td><div style="width:24px;height:24px;background:@Model.Color"/></td>
+</tr>
