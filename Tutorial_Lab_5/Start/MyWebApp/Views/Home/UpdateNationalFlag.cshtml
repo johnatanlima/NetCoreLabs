@@ -1,0 +1,17 @@
+@model MyWebApp.Models.Country
+
+<html>
+ 
+    <h1>Update Nation Flag</h1>
+   
+    <form action="UpdateNationalFlag" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="code" value="@Model.Code"/>
+        <b>Code:</b><span>@Model.Code</span><br/>
+        <b>Name:</b><span>@Model.Name</span><br/>
+        <b>Continent:</b><span>@Model.Continent</span><br/>
+        <b>Choose Local File:</b>
+        <input type="file" name="nationalFlagFile"/><br/>
+        <input type="submit" value="Update"/>
+    </form>
+</html>
+
