@@ -1,0 +1,14 @@
+﻿<html>
+    <!--use table as the navigation bar-->
+    <table>
+        <tr>
+            <td>|@Html.ActionLink("Home", "Index", "Home")</td>
+            <td>|@Html.ActionLink("Products", "Index", "Product")</td>
+            <td>|@Html.ActionLink("Types", "Index", "ProductType")</td>
+        </tr>
+    </table>
+    <hr/>
+    @RenderBody()
+    <hr/>
+    Seja Bem Vindo ao Projeto Final do Curso: Microsoft: DEV250x MVC Application Design using .NET Core 2.0 ! (@DateTime.Now)
+</html>
