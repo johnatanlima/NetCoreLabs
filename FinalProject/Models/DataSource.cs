@@ -10,27 +10,27 @@ namespace FinalProject.Models {
             _productTypes = new Dictionary<int, ProductType>();
             _products = new Dictionary<int, Product>();
 
-            _productTypes.Add(1, new ProductType { ID = 1, Name = "Book" });
-            _productTypes.Add(2, new ProductType { ID = 2, Name = "Fruit" });
+            _productTypes.Add(1, new ProductType { Id = 1, Name = "Book" });
+            _productTypes.Add(2, new ProductType { Id = 2, Name = "Fruit" });
 
-            _products.Add(1, new Product { ID = 1, Name = "Learning C#", TypeID = 1, Price = 9.99 });
-            _products.Add(2, new Product { ID = 2, Name = "Learning Java", TypeID = 1, Price = 9.99 });
-            _products.Add(3, new Product { ID = 3, Name = "Learning Python", TypeID = 1, Price = 9.99 });
-            _products.Add(4, new Product { ID = 4, Name = "Apple", TypeID = 2, Price = 0.99 });
-            _products.Add(5, new Product { ID = 5, Name = "Banana", TypeID = 2, Price = 0.99 });
-            _products.Add(6, new Product { ID = 6, Name = "Orange", TypeID = 2, Price = 0.99 });
+            _products.Add(1, new Product { Id = 1, Name = "Learning C#", TypeId = 1, Price = 9.99 });
+            _products.Add(2, new Product { Id = 2, Name = "Learning Java", TypeId = 1, Price = 9.99 });
+            _products.Add(3, new Product { Id = 3, Name = "Learning Python", TypeId = 1, Price = 9.99 });
+            _products.Add(4, new Product { Id = 4, Name = "Apple", TypeId = 2, Price = 0.99 });
+            _products.Add(5, new Product { Id = 5, Name = "Banana", TypeId = 2, Price = 0.99 });
+            _products.Add(6, new Product { Id = 6, Name = "Orange", TypeId = 2, Price = 0.99 });
         }
 
         public static IList<Product> GetProducts() {
             var result = _products.Values.ToList();
-            result.ForEach(p => p.Type = _productTypes[p.TypeID]);
+            result.ForEach(p => p.Type = _productTypes[p.TypeId]);
             return result;
         }
 
         public static Product GetProductByID(int id) {
             if (_products.ContainsKey(id)) {
                 var result = _products[id];
-                result.Type = _productTypes[result.TypeID];
+                result.Type = _productTypes[result.TypeId];
                 return result;
             }
             return null;
@@ -39,7 +39,7 @@ namespace FinalProject.Models {
         public static IList<Product> GetProductsByTypeID(int typeID) {
             var result = new List<Product>();
             if (_productTypes.ContainsKey(typeID)) {
-                result = _products.Values.Where(p => p.TypeID == typeID).ToList();
+                result = _products.Values.Where(p => p.TypeId == typeID).ToList();
                 result.ForEach(p => p.Type = _productTypes[typeID]);
             }
 
@@ -47,8 +47,8 @@ namespace FinalProject.Models {
         }
 
         public static Product AddProduct(Product product) {
-            product.ID = _products.Keys.Max() + 1;
-            _products.Add(product.ID, product);
+            product.Id = _products.Keys.Max() + 1;
+            _products.Add(product.Id, product);
             return product;
         }
 
@@ -73,7 +73,7 @@ namespace FinalProject.Models {
         public static IList<ProductType> GetProductTypes() {
             var result = _productTypes.Values.ToList();
             foreach (var t in result) {
-                var products = GetProductsByTypeID(t.ID);
+                var products = GetProductsByTypeID(t.Id);
                 t.Products.Clear();
                 foreach (var p in products) {
                     t.Products.Add(p);
@@ -85,7 +85,7 @@ namespace FinalProject.Models {
         public static ProductType GetProductTypeByID(int id) {
             if (_productTypes.ContainsKey(id)) {
                 var result = _productTypes[id];
-                var products = GetProductsByTypeID(result.ID);
+                var products = GetProductsByTypeID(result.Id);
                 result.Products.Clear();
                 foreach (var p in products) {
                     result.Products.Add(p);
@@ -97,8 +97,8 @@ namespace FinalProject.Models {
         }
 
         public static ProductType AddProductType(ProductType type) {
-            type.ID = _productTypes.Keys.Max() + 1;
-            _productTypes.Add(type.ID, type);
+            type.Id = _productTypes.Keys.Max() + 1;
+            _productTypes.Add(type.Id, type);
             return type;
         }
 

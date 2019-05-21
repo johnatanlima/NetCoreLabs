@@ -1,6 +1,0 @@
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.csprojAssemblyReference.cache
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.csproj.CoreCompileInputs.cache
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.RazorAssemblyInfo.cache
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.RazorAssemblyInfo.cs
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.AssemblyInfoInputs.cache
-C:\Users\pcosta\Contacts\Code\Files\WorkspaceGithub\NetCoreLabs\FinalProject\obj\Debug\netcoreapp2.1\FinalProject.AssemblyInfo.cs
