@@ -1,27 +1,29 @@
-using Microsoft.AspNetCore.Mvc;
-using MyWebApp.Models;
-//Add
 using System;
 using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using MyWebApp.Models;
 
-namespace MyWebApp.Controllers {
- 
+namespace MyWebApp.Controllers
+{
+
     public class HomeController : Controller {
- 
+        
+
+        private IHostingEnvironment _environment;
+
+        public HomeController(IHostingEnvironment env) {
+            _environment = env;
+        }
+        
         public IActionResult Index() {
  
             return View(DataSource.Countries);
         }
 
         //ADD
-        private IHostingEnvironment _environment;
-
-        public HomeController(IHostingEnvironment env) {
-            _environment = env;
-        }
 
         [HttpGet]
         public IActionResult UpdateNationalFlag(string code) {
@@ -55,6 +57,6 @@ namespace MyWebApp.Controllers {
          return RedirectToAction(nameof(Index));
     }
 
-    }//controller
+    }
 }
 

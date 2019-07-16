@@ -1,0 +1,31 @@
+*******************************************************
+*****   Laboratório final: Global City Manager  ******* 
+*******************************************************  
+***                                                 ***                
+***     Durante todo o curso, consegui aprender     ***
+***     vários conceitos importantes sobre o        ***
+***     desenvolvimento de aplicações web           ***
+***     utilizando a plataforma web Asp Net Core.   ***
+***     No repositório há exemplos de con-          ***
+***     teúdos que foram vistos e também algumas de ***
+***     suas aplicações PRÁTICAS.                   ***
+***                                                 *** 
+***     Neste PROJETO FINAL, serão implementados    ***
+***     resoluções que foram aprendidas durante     *** 
+***     todo o curso.                               ***
+***                                                 ***
+*******************************************************
+
+    ------------------ QUESTÕES -------------------
+
+    1. Scaffold the models and data access layer using 
+    Entity Framework Core;
+
+    2. Create controllers and actions for city and 
+    country management;
+
+    3. Create layout views, functional views, and 
+    partial views to render cities and countries;
+
+    4. Other skills, such as master-detail page,
+    uploading files, etc.
