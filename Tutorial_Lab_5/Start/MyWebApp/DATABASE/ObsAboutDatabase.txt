@@ -1,0 +1,30 @@
+---------------------------------------+
+-> Algumas alterações precisam  
+   serem feitas logo depois que 
+   o script para criar a base de 
+    dados for executado. Abaixo está 
+    as alterações necessárias. 
+----------------------------------------+
+
+===>>> Para simplificar o modelo de negócios,
+ eliminamos a tabela 'countrylanguage' e removemos
+ a maioria das colunas da tabela do país. Para 
+ fazer isso, execute os comandos SQL abaixo no 
+ MySQL Workbench ou outra IDE de preferência. 
+
+    USE `world`;
+    DROP TABLE `countrylanguage`;
+    ALTER TABLE `country`
+    DROP COLUMN `Continent`,
+    DROP COLUMN `SurfaceArea`,
+    DROP COLUMN `IndepYear`,
+    DROP COLUMN `Population`,
+    DROP COLUMN `LifeExpectancy`,
+    DROP COLUMN `GNP`,
+    DROP COLUMN `GNPOld`,
+    DROP COLUMN `LocalName`,
+    DROP COLUMN `GovernmentForm`,
+    DROP COLUMN `HeadOfState`,
+    DROP COLUMN `Capital`,
+    DROP COLUMN `Code2`;
+
