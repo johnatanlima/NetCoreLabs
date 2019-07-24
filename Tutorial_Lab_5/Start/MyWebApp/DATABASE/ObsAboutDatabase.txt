@@ -6,11 +6,11 @@
     as alterações necessárias. 
 ----------------------------------------+
 
-===>>> Para simplificar o modelo de negócios,
- eliminamos a tabela 'countrylanguage' e removemos
- a maioria das colunas da tabela do país. Para 
- fazer isso, execute os comandos SQL abaixo no 
- MySQL Workbench ou outra IDE de preferência. 
+->  Para simplificar o modelo de negócios,
+    eliminamos a tabela 'countrylanguage' e removemos
+    a maioria das colunas da tabela do país. Para 
+    fazer isso, execute os comandos SQL abaixo no 
+    MySQL Workbench ou outra IDE de preferência. 
 
     USE `world`;
     DROP TABLE `countrylanguage`;
@@ -28,3 +28,15 @@
     DROP COLUMN `Capital`,
     DROP COLUMN `Code2`;
 
+->  Como a tabela 'country' do banco de dados 
+    original 'world' não tem a coluna 'NationalFlag',
+    temos que adicionar essa coluna executando o código abaixo:
+    NOTA: É preciso desabilitar o 'Safe mode for table updates'
+    presente no MySQLWorkbench. Em seguida, vamos atualizar o 
+    nosso banco de dados. 
+
+    USE 'world';
+    ALTER TABLE 'country' ADD COLUMN 'NationalFlag' NVARCHAR(200);
+    UPDATE 'country' SET 'NationalFlag' = 'Images\\Default.png';
+ 
+    
