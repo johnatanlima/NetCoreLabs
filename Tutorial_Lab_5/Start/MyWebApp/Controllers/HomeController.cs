@@ -4,7 +4,6 @@ using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyWebApp.Models;
 
 namespace MyWebApp.Controllers
 {
@@ -18,6 +17,7 @@ namespace MyWebApp.Controllers
             _environment = env;
         }
         
+        /*
         public IActionResult Index() {
  
             return View(DataSource.Countries);
@@ -55,8 +55,9 @@ namespace MyWebApp.Controllers
             }
         
          return RedirectToAction(nameof(Index));
+    }*/
+    
     }
 
-    }
 }
 

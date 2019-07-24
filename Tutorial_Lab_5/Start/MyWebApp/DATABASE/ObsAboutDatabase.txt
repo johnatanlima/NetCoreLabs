@@ -38,5 +38,3 @@
     USE 'world';
     ALTER TABLE 'country' ADD COLUMN 'NationalFlag' NVARCHAR(200);
     UPDATE 'country' SET 'NationalFlag' = 'Images\\Default.png';
- 
-    

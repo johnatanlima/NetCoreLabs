@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyWebApp.Models;
 
 namespace MyWebApp
 {
@@ -14,7 +16,12 @@ namespace MyWebApp
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services) {
+            
+            // using Microsoft.EntityFrameworkCore;
+            services.AddDbContext<WorldDbContext>(options => options.UseMySql(Configuration.GetConnectionString("myCon")));
+            
             services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
