@@ -1,8 +1,4 @@
-using System;
-using System.IO;
-using System.Linq;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MyWebApp.Controllers
@@ -17,14 +13,14 @@ namespace MyWebApp.Controllers
             _environment = env;
         }
         
-        /*
         public IActionResult Index() {
  
-            return View(DataSource.Countries);
+            return View();
         }
 
+        /*
         //ADD
-
+        
         [HttpGet]
         public IActionResult UpdateNationalFlag(string code) {
         var country = DataSource.Countries.SingleOrDefault(c => c.Code.Equals
