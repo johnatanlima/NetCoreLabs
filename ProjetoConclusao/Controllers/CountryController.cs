@@ -8,9 +8,14 @@ using ProjetoConclusao.Models;
 
 namespace ProjetoConclusao.Controllers
 {
-    public class HomeController : Controller
+    public class CountryController : Controller
     {
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Create(Country country)
         {
             return View();
         }
@@ -20,6 +25,21 @@ namespace ProjetoConclusao.Controllers
             return View();
         }
 
+        public IActionResult Details(int id)
+        {
+            return View();
+        }
+
+        public IActionResult Update(Country country)
+        {
+            return View();
+        }
+
+        public IActionResult Remove(int id)
+        {
+            return View();
+        }
+/* 
         public IActionResult Privacy()
         {
             return View();
@@ -29,6 +49,6 @@ namespace ProjetoConclusao.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        } */
     }
 }
